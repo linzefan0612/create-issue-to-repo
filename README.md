@@ -26,12 +26,12 @@ pnpm build
 ```
 
 4. 生成对应的ACTION TOKEN
-1. 申请一个 token
-2. 在 repo 的 Settings 的 Secrets 里添加新的 Secret
+- 申请一个 token
+- 在 repo 的 Settings 的 Secrets 里添加新的 Secret
 > 这里的repo是这个done下来的仓库，要设置在这个仓库
-3. 点击右上角 New repository secret
-4. Name TOKEN
-5. Value 为你申请到的 token
+- 点击右上角 New repository secret
+- Name TOKEN
+- Value 为你申请到的 token
 
 
 # 后记
