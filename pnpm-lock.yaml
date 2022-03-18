@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@actions/core': ^1.6.0
   '@vercel/ncc': ^0.33.3
   dayjs: ^1.11.0
   fs: ^0.0.1-security
@@ -9,6 +10,7 @@ specifiers:
   typescript: ^4.6.2
 
 dependencies:
+  '@actions/core': registry.npmmirror.com/@actions/core/1.6.0
   '@vercel/ncc': registry.npmmirror.com/@vercel/ncc/0.33.3
   dayjs: registry.npmmirror.com/dayjs/1.11.0
   fs: registry.npmmirror.com/fs/0.0.1-security
@@ -17,6 +19,22 @@ dependencies:
   typescript: registry.npmmirror.com/typescript/4.6.2
 
 packages:
+
+  registry.npmmirror.com/@actions/core/1.6.0:
+    resolution: {integrity: sha512-NB1UAZomZlCV/LmJqkLhNTqtKfFXJZAUPcfl/zqG7EfsQdeUJtaWO98SGbuQ3pydJ3fHl2CvI/51OKYlCYYcaw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@actions/core/-/core-1.6.0.tgz}
+    name: '@actions/core'
+    version: 1.6.0
+    dependencies:
+      '@actions/http-client': registry.npmmirror.com/@actions/http-client/1.0.11
+    dev: false
+
+  registry.npmmirror.com/@actions/http-client/1.0.11:
+    resolution: {integrity: sha512-VRYHGQV1rqnROJqdMvGUbY/Kn8vriQe/F9HR2AlYHzmKuM/p3kjNuXhmdBfcVgsvRWTz5C5XW5xvndZrVBuAYg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@actions/http-client/-/http-client-1.0.11.tgz}
+    name: '@actions/http-client'
+    version: 1.0.11
+    dependencies:
+      tunnel: registry.npmmirror.com/tunnel/0.0.6
+    dev: false
 
   registry.npmmirror.com/@cspotcode/source-map-consumer/0.8.0:
     resolution: {integrity: sha512-41qniHzTU8yAGbCp04ohlmSrZf8bkf/iJsl3V0dRGsQN/5GFfx+LbCSsCpp2gqrqjTVg/K6O8ycoV35JIwAzAg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cspotcode/source-map-consumer/-/source-map-consumer-0.8.0.tgz}
@@ -688,6 +706,13 @@ packages:
       typescript: registry.npmmirror.com/typescript/4.6.2
       v8-compile-cache-lib: registry.npmmirror.com/v8-compile-cache-lib/3.0.0
       yn: registry.npmmirror.com/yn/3.1.1
+    dev: false
+
+  registry.npmmirror.com/tunnel/0.0.6:
+    resolution: {integrity: sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tunnel/-/tunnel-0.0.6.tgz}
+    name: tunnel
+    version: 0.0.6
+    engines: {node: '>=0.6.11 <=0.7.0 || >=0.7.3'}
     dev: false
 
   registry.npmmirror.com/typescript/4.6.2:
