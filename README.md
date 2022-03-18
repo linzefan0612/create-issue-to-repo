@@ -33,6 +33,8 @@ pnpm build
 - Name TOKEN
 - Value 为你申请到的 token
 
+5. 修改template模板
+里面就是你要提交的issue内容
 
 # 后记
 目前功能比较单一，向某个仓库提交issue，如果想要修改，自己动手！！
