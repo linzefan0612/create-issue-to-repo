@@ -1,7 +1,7 @@
 /*
  * @Author: Lin zefan
  * @Date: 2022-03-18 10:42:58
- * @LastEditTime: 2022-03-18 13:33:27
+ * @LastEditTime: 2022-03-18 15:05:40
  * @LastEditors: Lin zefan
  * @Description:
  * @FilePath: \create-issues\index.ts
@@ -40,7 +40,7 @@ function createIssue() {
     body: getBody(),
   });
 }
-// 获取所有issues
+// 获取仓库所有issues
 async function getAllIssues() {
   return await octokit.paginate(octokit.rest.issues.listForRepo, {
     ...REPO_INFO,
@@ -57,7 +57,7 @@ getAllIssues()
         console.log("创建成功，标题是：", title);
         createIssue();
       } else {
-        console.log("已经创建过一样的issue了", title);
+        console.log("已经创建过issue了", title);
       }
     } else {
       createIssue();
