@@ -1,7 +1,7 @@
 /*
  * @Author: Lin zefan
  * @Date: 2022-03-18 10:42:58
- * @LastEditTime: 2022-03-18 13:18:18
+ * @LastEditTime: 2022-03-18 13:33:27
  * @LastEditors: Lin zefan
  * @Description:
  * @FilePath: \create-issues\index.ts
@@ -21,8 +21,8 @@ const octokit = new Octokit({ auth });
 
 // 定义项目通用参数
 const REPO_INFO = {
-  owner: "linzefan0612", // 你的用户名
-  repo: "every-day-list", // 你的仓库名
+  owner: "linzefan0612", // 对应用户名
+  repo: "every-day-list", // 对应仓库名
 };
 
 function getTitle() {

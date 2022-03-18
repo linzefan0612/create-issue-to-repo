@@ -15,8 +15,8 @@ pnpm i
 找到 REPO_INFO
 ```ts
 const REPO_INFO = {
-  owner: "xxx", // 你的用户名
-  repo: "xxx", // 你的仓库名
+  owner: "xxx", // 对应的用户名
+  repo: "xxx", // 对应的仓库名
 };
 ```
 
