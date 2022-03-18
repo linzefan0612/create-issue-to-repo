@@ -17,5 +17,5 @@ jobs:
       - name: create issues action
         uses: ./ # Uses an action in the root directory
         with:
-          token: ${{secrets.TOKEN}}
+          token: ${{secrets.GH_TOKEN}}
 
