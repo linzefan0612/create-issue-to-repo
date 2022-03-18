@@ -1,7 +1,7 @@
 /*
  * @Author: Lin zefan
  * @Date: 2022-03-18 10:42:58
- * @LastEditTime: 2022-03-18 12:44:32
+ * @LastEditTime: 2022-03-18 13:18:18
  * @LastEditors: Lin zefan
  * @Description:
  * @FilePath: \create-issues\index.ts
@@ -54,6 +54,7 @@ getAllIssues()
       const title = getTitle();
       // 没有重复标题就创建
       if (!issuesList.includes(title)) {
+        console.log("创建成功，标题是：", title);
         createIssue();
       } else {
         console.log("已经创建过一样的issue了", title);

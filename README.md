@@ -3,6 +3,7 @@
 
 
 ## 如果变成你的
+0. 先吧项目done下来
 
 1. 项目初始化
 ```diff
@@ -25,3 +26,13 @@ pnpm build
 ```
 
 4. 生成对应的ACTION TOKEN
+申请一个 token
+<!-- 这里的repo是这个done下来的仓库，要设置在这个仓库，是借助该仓库去向对应的仓库提issue -->
+在 repo 的 Settings 的 Secrets 里添加新的 Secret
+点击右上角 New repository secret
+Name TOKEN
+Value 为你申请到的 token
+
+
+# 后记
+目前功能比较单一，向某个仓库提交issue，如果想要修改，自己动手！！
