@@ -1,0 +1,10 @@
+name: 'created every-day content issue' # 名称
+description: 'create issue' # 描述
+# 定义输入项
+inputs:
+  token:  # 输入项的名称
+    description: 'Get secrets token' # 输入项的描述
+    required: true # 输入项是否必须
+runs:
+  using: 'node12' # 指定在node12的环境中执行
+  main: 'dist/index.js' # 指定需要执行的文件

@@ -1,0 +1,31 @@
+name: created every-day-issue content to linzefan0612/every-day-list/issue
+
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  create_issues_action:
+    runs-on: ubuntu-latest
+    name: create issues action
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        CANCEL_SUB: true
+    # steps:
+    #   - uses: actions/checkout@v2
+    #   - uses: actions/setup-node@v2
+    #   - run: npm install
+    #   - run: tsc
+    #   - run: node dist/index.js
+     steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: create issues action
+        run: npm install
+        uses: ./ # Uses an action in the root directory
+        with:
+          token: ${{secrets.TOKEN}}
+
