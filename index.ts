@@ -8,9 +8,7 @@
  *
  */
 
-// import { Octokit } from "octokit";
-// import dayjs from "dayjs";
-// import fs from 'fs'
+
 const { Octokit } = require("octokit");
 const core = require("@actions/core");
 const dayjs = require("dayjs");
